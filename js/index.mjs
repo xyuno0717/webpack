@@ -3,4 +3,4 @@ import * as util from './utility.mjs'
 
 ///////////////////////////////////////////////////////////////////////
 
-util.modalOpen();
+$('open').on('click', util.modalOpen());
