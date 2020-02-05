@@ -1,4 +1,4 @@
 //カスタムデータ属性で開くモーダルを指定するタイプのモーダル
-export function modalOpen(evt) {
+export function modalOpen() {
     console.log("hello");
 }

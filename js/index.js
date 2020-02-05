@@ -1,5 +1,5 @@
 
-    import * as util from './utility'
+    import * as util from 'utility.js'
 
     ///////////////////////////////////////////////////////////////////////
 
