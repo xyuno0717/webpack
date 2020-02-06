@@ -3,4 +3,8 @@ import * as util from './utility.mjs'
 
 ///////////////////////////////////////////////////////////////////////
 
-util.modalOpen("js_open");
+// テスト1
+// util.modalOpen();
+
+// テスト2
+document.getElementById("js_open").addEventListener("click", util.modalOpen, false);
