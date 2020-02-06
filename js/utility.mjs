@@ -1,4 +1,8 @@
 // exportテスト
 export function modalOpen() {
-    console.log("hello");
+    document.getElementById("open").addEventListener("click", function(){
+        console.log("hello");
+    }, false);
+
+    
 }
