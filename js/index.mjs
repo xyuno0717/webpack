@@ -3,4 +3,4 @@ import * as util from './utility.mjs'
 
 ///////////////////////////////////////////////////////////////////////
 
-document.querySelectorAll(".open").onclick = util.modalOpen;
+util.modalOpen();
