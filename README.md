@@ -1,1 +1,1 @@
-https://xyuno0717.github.io/webpack/html/index.html
+https://xyuno0717.github.io/webpack_test/html/index.html
