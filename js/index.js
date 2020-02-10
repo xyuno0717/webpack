@@ -1,4 +1,4 @@
-import './test.scss';
+import '../scss/test.scss';
 import * as util from './utility.js'
 ///////////////////////////////////////////////////////////////////////
 
