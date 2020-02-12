@@ -4,7 +4,7 @@ const webpack = require('webpack');
 module.exports = {
     // メインとなるJavaScriptファイル（エントリーポイント）
     entry: "./js/index.js",
-    mode: "development",
+    mode: "production",
     // ファイルの出力設定
     output: {
         //  出力ファイルのディレクトリ名
