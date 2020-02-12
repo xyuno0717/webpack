@@ -1,3 +1,6 @@
+// プラグインを利用するためにwebpackを読み込んでおく
+const webpack = require('webpack');
+
 module.exports = {
     // メインとなるJavaScriptファイル（エントリーポイント）
     entry: "./js/index.js",
@@ -38,4 +41,9 @@ module.exports = {
             }
         ]
     },
+    plugins: [
+        new webpack.ProvidePlugin({
+            $: 'jquery',
+        }),
+    ],
 };
