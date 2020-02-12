@@ -1,11 +1,7 @@
-// テスト1
-// export function modalOpen() {
-//     document.getElementById("open").addEventListener("click", function(){
-//         console.log("hello");
-//     }, false);
-// }
-
-// テスト2
 export function modalOpen() {
     console.log("hello");
+}
+
+export function changeBig() {
+    $("#js_open").css("width", "40px");
 }

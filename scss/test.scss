@@ -1,4 +1,6 @@
+@charset "UTF-8";
 
-h1 {
-    color: aqua;
-}
+//関数・mixin
+@import 'module/box.scss';
+@import 'module/modal.scss';
+@import 'module/panel.scss';

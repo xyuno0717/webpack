@@ -8,6 +8,8 @@ module.exports = {
         path: `${__dirname}/dist`,
         // 出力ファイル名
         filename: "bundle.js"
+        // hash値自動付与 変更時はwebpack再起動
+        // filename: "bundle_[hash].js"
     },
     module: {
         rules: [
@@ -16,7 +18,7 @@ module.exports = {
                 use: [
                     // linkタグに出力する機能
                     "style-loader",
-                    "css-loader",
+                    "css-loader"
                 ]
             },
             {
@@ -24,7 +26,13 @@ module.exports = {
                 use: [
                     // linkタグに出力する機能
                     "style-loader",
-                    "css-loader",
+                    {
+                        loader: 'css-loader',
+                        options: {
+                            //相対パス利用する
+                            url: false,
+                        },
+                    },
                     "sass-loader",
                 ]
             }
