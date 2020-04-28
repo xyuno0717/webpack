@@ -1,14 +1,15 @@
 // プラグインを利用するためにwebpackを読み込んでおく
 const webpack = require('webpack');
+const path = require('path');
 
 module.exports = {
     // メインとなるJavaScriptファイル（エントリーポイント）
-    entry: "./js/index.js",
+    entry: "../js/index.js",
     mode: "production",
     // ファイルの出力設定
     output: {
         //  出力ファイルのディレクトリ名
-        path: `${__dirname}/dist`,
+        path: path.resolve(__dirname, '../../js'),
         // 出力ファイル名
         filename: "bundle.js"
         // hash値自動付与 変更時はwebpack再起動
@@ -41,9 +42,9 @@ module.exports = {
             }
         ]
     },
-    plugins: [
-        new webpack.ProvidePlugin({
-            $: 'jquery',
-        }),
-    ],
+    // plugins: [
+    //     new webpack.ProvidePlugin({
+    //         $: 'jquery',
+    //     }),
+    // ],
 };
